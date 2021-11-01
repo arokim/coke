@@ -1,14 +1,14 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 
 /* 레이아웃 */
-#wrap{width: 100%;}
+#wrap{width: 100%; box-sizing: border-box;}
 #header{width: 100%; height: 89px; position: relative; top: 0; left: 0;}
 #footer{text-align: center; background-color: #ddd; padding: 12px 0; font-size: 18px;}
 
 
 /* 공통속성 */
-body{font-family: 'Dokdo', cursive; font-size: 25px;}
+body{font-family: 'Stylish', sans-serif;}
 .container{width: 100%; height: 100%; margin: 0 auto;}
 
 
@@ -16,7 +16,7 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
 /* 메뉴 */
 .header{width: 100%; height: 100%; margin: 0 auto;}
 .menu{width: 100%; height: 100%; position: relative;}
-.menu .gnb{width: 100%; margin: 0 auto; display: flex; justify-content: space-around;}
+.menu .gnb{width: 100%; margin: 0 auto; display: flex; justify-content: space-between;}
 .menu>.gnb>a{width: 20%; display: block;  position: relative; top: 0px; left: 5%;/* float: left; */}
 .menu>.gnb>div{width: 80%;}
 /* .menu>.gnb>a>img{width: 100%;display: block;  position: absolute; top: 0; left:0px;/* float: left; } */
@@ -24,7 +24,7 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
 .login ul{list-style: none; float: right;}
 .login ul li{list-style: none; float: left; padding-right: 10px;}
 .login ul li::after{content: ''; width: 2px; height: 4px; background-color: black;}
-.nav{margin-top: 35px; }
+.nav{margin-top: 35px;}
 .nav .bg_red{position: absolute; top: 89px; left: 0; width: 100%; height: 45px;  z-index: 0; overflow: hidden;}
 .nav:hover{height: 450px; background: rgba(255, 255, 255,.95);}
 .nav .bg_menu{position: relative; z-index: 10;}
@@ -39,7 +39,7 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
 .bg_menu>ul>li>ul{padding-top: 25px; border-left: 1px dashed rgb(207, 65, 65); height: 450px; }
 .bg_menu>ul>li:first-child ul{border-left:0}
 .bg_menu>ul>li>ul>li{text-align: center;}
-.nav ul>li>a{font-weight: 700; color:#000; font-size: 17px; display: block; padding: 0 37px;}
+.nav ul>li>a{font-weight: 700; color:#000; font-size: 23px; display: block; padding: 0 37px;}
 .bg_menu>ul>li>ul.menu_sub li a{font-size: 15px; font-weight: 500; padding: 7px 0;}
 .bg_menu>ul>li>ul.menu_sub li a:hover{font-weight: bold;}
 .bg_menu .grey-l{padding: 10px;}
@@ -55,12 +55,12 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
 .mobileMenu .header-top .icons i.fa-wifi{margin-right: 10px;}
 .mobileMenu .header-top .icons i.fa-battery-full{margin-right: 6px;}
 
-.mobileMenu .header-top2{display: flex; justify-content: space-between; text-align: center; align-items: center; height: 50px; overflow: hidden; background-color: white;}
+.mobileMenu .header-top2{display: flex; justify-content: space-between; text-align: center; align-items: center; height: 67px; overflow: hidden; background-color: white;}
 .header-top2>ul{display: flex; justify-content: space-between; align-items: center;     padding-top: 10px;}
 .header-top2>ul li.hambergerbox{flex: 1;}
 .header-top2>ul li.hambergerbox a.top2-icon{cursor: pointer; width: 100%;}
 
-.header-top2>ul li.hambergerbox ul.mobileMenu2{background-color: snow; width: inherit; display: none; position: absolute; height: 330px; width: 100%;}
+.header-top2>ul li.hambergerbox ul.mobileMenu2{background-color: snow; width: inherit; display: none; position: absolute; height: 330px; width: 100%; top: 67px;}
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li{padding: 10px;}
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li a{font-size: 30px; }
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li:hover a{font-weight: bold;}
@@ -107,7 +107,7 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
 #footer .sns{margin-top: 10px;}
 #footer .sns .icons a{margin-right: 10px;}
 #footer .sns .links .ccm{background-color: grey; color: white; border-radius: 5px;width: 125px; height: 20px; display: inline-block; padding-top: 6px; font-weight: bold; border: 1px solid black; font-size: 12px;}
-#footer .sns .links .sitemap{background-color: white; border-radius: 5px; border: 1px solid #BF2A37 ; color:#BF2A37; font-weight: bold; width: 53px; height: 15px; display: inline-block; padding: 5px;}
+#footer .sns .links .sitemap{background-color: white; border-radius: 5px; border: 1px solid #BF2A37 ; color:#BF2A37; font-weight: bold; width: 53px; height: 15px; display: inline-block; padding: 5px; font-size: 13px;}
 
 
 
@@ -117,21 +117,22 @@ body{font-family: 'Dokdo', cursive; font-size: 25px;}
     .menu .gnb{justify-content: space-between;}
 }
 @media screen and (max-width: 1162px){
-    #header{height: 65px; }
+    #header{height: 65px;}
     .menu>.gnb>a{left: 2%; width:140px }
     .menu>.gnb>a>img{width:100% }
     .nav{margin-top: 15px; }
     .button a{font-size: 30px;}
-    .nav ul>li>a{font-size: 14px; letter-spacing: -2px; padding: 0 3px}
+    .nav ul>li>a{font-size: 19px; letter-spacing: -2px; padding: 0 3px}
 }
-@media screen and (max-width: 872px){
-    #header .menu{display: none;}
-    #header .mobileMenu{display: block;}
+/* @media screen and (max-width: 872px){
+    
     .button{ width: 100%;}
     .button a{font-size: 25px;}
-}
+} */
 @media screen and (max-width:768px){
-    .button{flex-direction: column; height: auto}
+    #header .menu{display: none;}
+    #header .mobileMenu{display: block;}
+    .button{flex-direction: column; height: auto;}
     .button .btn{width: 100%; z-index: -1;}
     #footer .container{display: flex; flex-direction: column; } 
     #footer .sns{display: flex; justify-content: center;}
