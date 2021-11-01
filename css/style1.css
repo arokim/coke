@@ -64,17 +64,12 @@ body{font-family: 'Stylish', sans-serif;}
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li{padding: 10px;}
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li a{font-size: 30px; }
 .header-top2>ul li.hambergerbox ul.mobileMenu2 li:hover a{font-weight: bold;}
-.header-top2>ul li.logobox{}
-.header-top2>ul li.userbox{}
 .mobileMenu .header-top2 i{font-size: 36px;}
 .mobileMenu .header-top2 i.fa-bars{width: 60px; height: 40px; margin-left: 14px;}
 .mobileMenu .header-top2 .mobileMenu2{display: none; background-color: white; width: 100%; height: 0;}
 .mobileMenu .header-top2 .logobox-link{width: 231px; height: 77px; box-sizing: border-box;}
 .mobileMenu .header-top2 .logobox img{width: 60%;}
 .mobileMenu .header-top2 i.fa-user{width: 60px; height: 40px;}
-
-
-       
 
 
 /* contents */
